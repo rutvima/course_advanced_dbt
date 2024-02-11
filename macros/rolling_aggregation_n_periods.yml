@@ -1,0 +1,24 @@
+version: 2
+
+macros:
+  - name: rolling_aggregation_n_periods
+    description: '{{ doc("macro__rolling_aggregation_n_periods") }}'
+    arguments:
+
+      - name: column_name
+        type: string
+        description: '{{ doc("macro__rolling_aggregation_n_periods_column_name") }}'
+      - name: partition_by
+        type: string
+        description: '{{ doc("macro__rolling_aggregation_n_periods_partition_by") }}'
+      - name: aggregation_type
+        type: string
+        description: '{{ doc("macro__rolling_aggregation_n_periods_aggregation_type") }}'
+      - name: time_periods
+        type: INT
+        description: '{{ doc("macro__rolling_aggregation_n_periods_time_periods") }}'      
+      - name: order_by
+        type: string
+        description: '{{ doc("macro__rolling_aggregation_n_periods_order_by") }}'  
+
+       

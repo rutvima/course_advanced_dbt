@@ -27,3 +27,8 @@ models:
         tests:
           - not_null
           - unique
+      
+      - name: count_7_periods_event_id
+        description: count of events in a 7 time_period by using macro rolling_aggregation_n_periods
+        tests:
+          - not_null      

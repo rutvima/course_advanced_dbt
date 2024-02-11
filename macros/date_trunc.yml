@@ -1,0 +1,13 @@
+version: 2
+
+macros:
+  - name: date_trunc
+    description: '{{ doc("macro__date_trunc") }}' 
+    arguments:
+
+      - name: trunc_option
+        type: string
+        description: '{{ doc("macro__date_trunc_trunc_option") }}'
+      - name: column_name
+        type: date
+        description: '{{ doc("macro__date_trunc_column_name") }}'
