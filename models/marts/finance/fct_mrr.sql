@@ -1,5 +1,8 @@
 {{ config(tags="p0") }}
 
+{% set import_dim_subscriptions = unit_testing_select_table(ref('dim_subscriptions'), ref('unit_test_input_dim_subscriptions')) %}
+{% set import_int_dates = unit_testing_select_table(ref('int_dates'), ref('unit_test_input_int_dates')) %}
+
 
 -- This model is created following the dbt MRR playbook: https://www.getdbt.com/blog/modeling-subscription-revenue/
 
@@ -18,7 +21,7 @@ monthly_subscriptions AS (
         {{ date_trunc(column_name='starts_at') }} AS start_month,
         {{ date_trunc(column_name='ends_at') }} AS end_month        
     FROM
-        {{ ref('dim_subscriptions') }}
+        {{ import_dim_subscriptions }}
     WHERE
         billing_period = 'monthly'
 ),
@@ -28,7 +31,7 @@ months AS (
     SELECT
         calendar_date AS date_month
     FROM
-        {{ ref('int_dates') }}
+        {{ import_int_dates }}
     WHERE
         day_of_month = 1
 ),
