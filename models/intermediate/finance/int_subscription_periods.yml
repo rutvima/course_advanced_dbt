@@ -1,0 +1,25 @@
+models:
+  - name: int_subscription_periods
+    description: This computes subscription_periods to be used in fct_mrr
+    columns:
+      - name: subscription_id
+        description: '{{ doc("bingeflix_subscription_id") }}'
+        tests:
+          - not_null
+          - unique
+      - name: user_id
+        description: '{{ doc("bingeflix_user_id") }}'
+      - name: plan_name
+        description: '{{ doc("bingeflix_subscription_plans_plan_name") }}'
+      - name: monthly_amount
+        description: monthly_amount
+      - name: starts_at
+        description: '{{ doc("bingeflix_subscription_starts_at") }}'
+      - name: ends_at
+        description: '{{ doc("bingeflix_subscription_ends_at") }}'
+      - name: start_month
+        description: start_month
+      - name: end_month
+        description: end_month    
+
+        
