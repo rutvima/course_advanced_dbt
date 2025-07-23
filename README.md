@@ -1,5 +1,14 @@
-# Welcome to the Bingeflix Data Team
+# Advanced dbt
 
+Over four weeks, you’ll tackle the art of scaling dbt projects in real‑world settings, drawing on lessons from BenchSci and Maple. You’ll step into the shoes of the Bingeflix data team, auditing their growing dbt repository, identifying pain points and technical debt, and applying best practices to streamline transformations, testing and documentation. Each module builds on the last, guiding you through hands‑on projects that mirror challenges faced by data teams as they grow in size and complexity.
+
+Throughout the course, you’ll develop a toolkit for spotting and resolving common scaling pitfalls—branch conflicts, overly complex DAGs, flaky tests and stale docs—and learn techniques to automate repetitive tasks with macros, CI/CD pipelines and lineage checks. You’ll master strategies for boosting team efficiency, from template repositories and version control workflows to data quality frameworks that ensure reliability as your model count and contributor base expand.
+
+By the end, you’ll be equipped to maintain a highly functional dbt project under pressure: reducing manual overhead, enforcing consistent standards, and driving productivity across dispersed teams. These skills will empower you to lead data engineering initiatives, optimize costs and deliver trustworthy analytics at scale—transforming you into an indispensable architect of modern, data‑driven organizations.  
+
+**********************************************************************************************************************************************************************************
+
+# Welcome to the Bingeflix Data Team
 ### WEEK 4: task 2
 - Top 5 costliest dbt queries you've run in the last 30 days
 
